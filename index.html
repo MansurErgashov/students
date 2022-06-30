@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h2 class="site-header__heading">Studens</h2>
+    </header>
+    <main class="site-main">
+        <div class="site-main__container container">
+            <form class="site-main__form" action="#" method="post">
+                <input class="site-main__form-input" id="firstname" type="text" placeholder="first name">
+                <input class="site-main__form-input" id="lastname" type="text" placeholder="last name">
+                <input class="site-main__form-input" id="age" type="number" placeholder="age">
+                <button class="site-main__form-button" type="submit" id="form-submit">submit</button>
+            </form>
+            <div class="site-main__box">
+                <table class="site-main__box-table">
+                    <thead class="site-main__box-table-thead">
+                        <tr class="site-main__box-table-thead-tr">
+                            <th class="site-main__box-table-thead-tr-th">Id</th>
+                            <th class="site-main__box-table-thead-tr-th">first_name</th>
+                            <th class="site-main__box-table-thead-tr-th">last_name</th>
+                            <th class="site-main__box-table-thead-tr-th">age</th>
+                            <th class="site-main__box-table-thead-tr-th">edit</th>
+                            <th class="site-main__box-table-thead-tr-th">delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="site-main__box-table-tbody">
+                        <!-- <tr class="site-main__box-table-tbody-tr" id="tr">
+                            <td class="site-main__box-table-tbody-tr-th" id="id">1</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="firs-name">Mansur</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="last-name">Ergashov</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="age">20</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="edit">
+                                <button id="edit" type="submit">edit</button>
+                            </td>
+                            <td class="site-main__box-table-tbody-tr-th" id="delete">
+                                <button id="delete" type="submit">delete</button>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                    <template class="template">
+                        <tr class="site-main__box-table-tbody-tr" id="tr">
+                            <td class="site-main__box-table-tbody-tr-th" id="id">1</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="first-name">Mansur</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="last-name">Ergashov</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="age">20</td>
+                            <td class="site-main__box-table-tbody-tr-th" id="edit">
+                                <button id="edit-btn" type="submit">edit</button>
+                            </td>
+                            <td class="site-main__box-table-tbody-tr-th" id="delete">
+                                <button id="delete-btn" type="submit">delete</button>
+                            </td>
+                        </tr>
+                    </template>
+                </table>
+            </div>
+        </div>
+        
+        <!-- MODAL -->
+        <div class="edit-student">
+            <div class="edit-student__dialog">
+              <form class="edit-student-form" action="#" method="post">
+                <button class="close-btn" id="close-btn" type="submit">close</button>
+                <input class="edit-student__input" id="name" type="text" name="fistName" placeholder="First name">
+                <input class="edit-student__input" id="surname" type="text" name="lastName" placeholder="Last name">
+                <input class="edit-student__input" id="age" type="number" name="age" placeholder="Age">
+                <button type="submit" id="modal-edit-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
